@@ -39,11 +39,23 @@ static const char col_purple5[]	    = "#9932cc";
 static const char col_purple6[]	    = "#6a5acd";
 static const char col_purple7[]	    = "#7b68ee";
 static const char col_purple8[]	    = "#9370db";
+static const char normbordercolor[]       = "#3B4252";
+static const char normbgcolor[]           = "#2E3440";
+static const char normfgcolor[]           = "#D8DEE9";
+static const char selbordercolor[]        = "#434C5E";
+static const char selbgcolor[]            = "#434C5E";
+static const char selfgcolor[]            = "#ECEFF4";
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
+	/*               fg           bg           border   */
+	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+	[SchemeSel] =  { selfgcolor,  selbgcolor,  selbordercolor },
+};
+/*static const char *colors[][3]      = {
+	               fg         bg         border   
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_gray2},
-};
+};*/
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
